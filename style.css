@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Stardew-Font';
+    src: url(media/fonts/Stardew-Font.ttf);
+}
+
+@font-face {
+    font-family: 'Stardew-Pixel';
+    src: url(media/fonts/Stardew-Pixel.ttf);
+}
+
+body {
+    font-family: 'Stardew-Pixel';
+    background-color: #f0e6d2;
+    color: #613421;
+    padding: 20px;
+    font-size: 24px;
+    background-image: url("media/backgrounds/farm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+button {
+    font-family: 'Stardew-Pixel';
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #8ba88a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+nav button {
+    background-color: #6c935c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+nav button:hover { background-color: #5a7a4d; }
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.section {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.active {
+    display: block;
+}
+
+#head-div{
+    display: inline;
+    font-family: Stardew-Font;
+    font-size: 100px;
+    text-align: center;
+    color:#ffe358;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.home-card {
+    background-color: #f8f4e8;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border-left: 5px solid #8ba88a;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    background-color: #e9e0c7;
+}
+
+.villager-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px; 
+}
+
+.villager-card {
+    background-color: #f8f4e8;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #8ba88a;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.bundle-list {
+    columns: 2;
+    gap: 20px;
+}
+
+.checklist {
+    break-inside: avoid-column;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] { margin-right: 8px; }
+
+.season-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.spring { background-color: #b5e3b5; }
+.summer { background-color: #ffd700; }
+.fall { background-color: #d2691e; color: white; }
+.winter { background-color: #87ceeb; }
+
+.calculate-btn {
+    width: 40%;
+    padding: 14px 20px;
+    background-color: #6c935c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculate-btn:hover { background-color: #5a7a4d; }
+
+#profitResult {
+    margin-top: 2rem;
+    padding: 20px;
+    background: #f3faed;
+    border-radius: 8px;
+    border-left: 4px solid #6c935c;
+}
+
+.profit-header {
+    color: #4a6b3a;
+    margin-top: 0;
+}
+
+.profit-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #d8e5d0;
+}
+
+.profit-label { color: #6c935c; }
+.profit-value { color: #3e3a32; }
